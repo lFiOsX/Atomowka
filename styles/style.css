@@ -1,0 +1,23 @@
+/* 
+colors:
+#ddf4fa
+#d5539b
+#83d4f2
+#a8dff3
+#c01b82 
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* wzór banerów informacyjnych */
+.banner{
+    background-color: #c01b82;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+}
