@@ -1,23 +1,89 @@
 /* 
 colors:
-#ddf4fa
-#d5539b
-#83d4f2
-#a8dff3
-#c01b82 
+#83d4f2  - niebieski
+#a8dff3  - j niebieski
+#ddf4fa  - b j niebieski
+#c01b82  - różowy
+#d5539b  - j różowy
 */
+
+/* %%%%%%%%%%%%% NOTATNIK $%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:active{
+    color: green;
+}
+
+a:hover{
+    background-color: blue;
+}
+
+#content{
+    background-color: #ddf4fa;
+    min-height: 100vh;
+    position: relative;
+}
+
+#banners{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
 
 /* wzór banerów informacyjnych */
 .banner{
     background-color: #c01b82;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 25px;
     text-align: center;
+
+    margin: 2%;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    transition: 0.5s;
+
+    /* will-change: transform; */
+    backface-visibility: hidden;
+    /* transform-style: preserve-3d; */
+}
+
+.banner:hover{
+
+    /* ANIMACJA SIĘ ROZMAZUJE! */
+    transform: scale(1.2);
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+
+
+.service>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#services{
+    display: flex;
+    flex-direction: row;
 }
