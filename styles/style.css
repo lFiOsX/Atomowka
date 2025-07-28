@@ -17,9 +17,15 @@ colors:
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Caveat Brush", cursive;
+
+    /* font-family: "Caveat Brush", cursive;
     font-weight: 500;
+    font-style: normal; */
+
+     font-family: "Comic Relief", system-ui;
+    font-weight: 400;
     font-style: normal;
+
 }
 
 a{
@@ -69,7 +75,7 @@ a:hover{
     transition: 0.5s;
 }
 
-#banners :nth-child(2) p{
+#banners:nth-child(2) p{
     margin:0px 10px;
 }
 
