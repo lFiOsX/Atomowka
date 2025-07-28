@@ -17,6 +17,9 @@ colors:
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 500;
+    font-style: normal;
 }
 
 a{
@@ -39,14 +42,15 @@ a:hover{
 }
 
 #banners{
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
     position: absolute;
     top: 20px;
     right: 50px;
+    width:30%;
 }
 
-/* wzór banerów informacyjnych */
+/* szablon banerów informacyjnych */
 .banner{
     background-color: #c01b82;
     color: white;
@@ -54,26 +58,38 @@ a:hover{
     border-radius: 25px;
     text-align: center;
 
-    margin: 2%;
-    padding: 5px;
+    margin: 5px auto;
+    padding: 10px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    width: 70%;
     transition: 0.5s;
+}
 
-    /* will-change: transform; */
-    backface-visibility: hidden;
-    /* transform-style: preserve-3d; */
+#banners :nth-child(2) p{
+    margin:0px 10px;
 }
 
 .banner:hover{
 
-    /* ANIMACJA SIĘ ROZMAZUJE! */
-    transform: scale(1.2);
-    font-size: 1.1em;
+    /* dodac jeszcze ze po najechaniu pokazuje sie cos obok przycisku jakis obrazek staje sie nieprzezroczysty */
+    
+    
+    font-size: 1.3em;
+    width: 80%;
+    padding:20px;
+    border-radius: 50px;
     transition: 0.5s;
+}
+
+
+
+#services{
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -82,8 +98,4 @@ a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-#services{
-    display: flex;
-    flex-direction: row;
 }
