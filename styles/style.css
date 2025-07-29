@@ -13,7 +13,7 @@ colors:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-
+/*================ GLOBAL============== */
 *{
     margin: 0;
     box-sizing: border-box;
@@ -21,11 +21,11 @@ colors:
     /* font-family: "Caveat Brush", cursive;
     font-weight: 500;
     font-style: normal; */
-
-     font-family: "Comic Relief", system-ui;
+    
+    font-family: "Comic Relief", system-ui;
     font-weight: 400;
     font-style: normal;
-
+    
 }
 
 a{
@@ -37,14 +37,26 @@ a:active{
     color: green;
 }
 
-a:hover{
-    background-color: blue;
-}
+
+
+
+/*================ GLOBAL============== */
+
+/* STRONA STARTOWA */
 
 #content{
     background-color: #ddf4fa;
     min-height: 100vh;
     position: relative;
+}
+
+#business-card{
+    background-color: #83d4f2 ;
+}
+
+.logo{
+    padding-left: 10%;
+    padding-top: 2%;
 }
 
 #banners{
@@ -53,25 +65,27 @@ a:hover{
     position: absolute;
     top: 20px;
     right: 50px;
-    width:30%;
+    width:60%;
 }
 
 /* szablon banerów informacyjnych */
 .banner{
     background-color: #c01b82;
     color: white;
-    border: 2px solid white;
-    border-radius: 25px;
+    border: 5px solid white;
+    border-radius: 50px;
     text-align: center;
+    font-size: 30px;
 
     margin: 5px auto;
-    padding: 10px;
-
+    padding: 10px 20px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 70%;
+    width: fit-content;
+    /* width: 70%; */
     transition: 0.5s;
 }
 
@@ -80,28 +94,91 @@ a:hover{
 }
 
 .banner:hover{
-
+    
     /* dodac jeszcze ze po najechaniu pokazuje sie cos obok przycisku jakis obrazek staje sie nieprzezroczysty */
     
     
-    font-size: 1.3em;
-    width: 80%;
-    padding:20px;
+    font-size: 2.1em;
+    padding: 15px 11px;
     border-radius: 50px;
-    transition: 0.5s;
+    transition: 0.4s;
+}
+
+#facebook-banner{
+    margin-right: 40%;
+    transform: rotateZ(-0.01turn);
+}
+#phone-banner{
+    transform: rotateZ(0.02turn);
 }
 
 
 
-#services{
+
+
+
+#middle{
+    background-color: #ddf4fa;
+}
+#middle h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+#middle p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 2px;
+}
+#see-my-services{
     display: flex;
+    justify-content: center;
+}
+#see-my-services h1{
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 10%;
+    background-color: #c01b82;
+    border-radius: 50px;
+    width: fit-content;
+    color: white;
+    padding: 15px 40px;
+    box-shadow: 0px 25px 30px -11px rgba(66, 68, 90, 1);
+}
+#services{
+    padding: 10% 0;
+    display: flex;
+    justify-content: center;
     flex-direction: row;
 }
-
-
 .service>a{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 5px 20px;
+    
+}
+.service a img:hover{
+    transform: scale(1.2);
+    padding-bottom: 10px;
+    transition: 0.5s;
+    
+}
+
+#services label{
+    opacity: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+#services a:hover label{
+    opacity: 1;
+    transition: 0.7s linear ;
+
 }
