@@ -8,8 +8,9 @@ colors:
 */
 
 /* %%%%%%%%%%%%% NOTATNIK $%%%%%%%%%%%%%%%%%%%%
+-za ostre wszystko poprawic grafiki w canva gimp
 
--responyswność
+-chmura cała ma w ramce pasek
 -ozdoby umiejscownienie
 -ozdoby responsywnosc
 
@@ -20,6 +21,7 @@ colors:
 *{
     margin: 0;
     box-sizing: border-box;
+    
 
     /* font-family: "Caveat Brush", cursive;
     font-weight: 500;
@@ -60,10 +62,12 @@ a:active{
 }
 
 .logo{
+    z-index: 1;
     display: flex;
     justify-content: right;
     align-items: center;
     width: 40%;
+    
 
 }
 
@@ -73,11 +77,10 @@ a:active{
 }
 
 #banners{
-    /* width: auto;
-    height: auto; */
     top: 20px;
     right: 50px;
     width:60%;
+    z-index: 1;
 }
 /* szablon banerów informacyjnych */
 .banner{
@@ -99,6 +102,8 @@ a:active{
     width:fit-content;
     /* width: 70%; */
     transition: 0.5s;
+
+    filter: blur(0.4px);
 }
 
 /* odstęp logo od napisu w banerze */
@@ -141,6 +146,8 @@ a:active{
     font-size: clamp(1rem, 5.5vw, 3rem);
     font-weight: 500;
     letter-spacing: -3px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    z-index: 1;
 }
 #middle p{
     text-align: center;
@@ -210,12 +217,33 @@ a:active{
 
 
 .chmura-rog img{
-    transform: scale(5);
+    width: 20em;
+    height: 10em;
 }
 
 #cloud-upper-left{
     position: absolute;
     transform: rotate(0.5turn);
-    left: 0;
-    top: 0;
+    left: 0%;
+    top: 0%;
+    width: 30%;
+    height: auto;
+}
+#cloud-bottom-right{
+    position: absolute;
+    transform: rotateX(0.5turn);
+    right: 0%;
+    top: 0%;
+    width: 30%;
+    height: auto;
+}
+
+#cloud-bottom-left{
+    position: absolute;
+    left: -10%;
+    top: 9%;
+    width: 40%;
+    height: auto;
+    z-index: 0;
+    
 }
