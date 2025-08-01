@@ -237,7 +237,6 @@ a:active{
     width: 30%;
     height: auto;
 }
-
 #cloud-bottom-left{
     position: absolute;
     left: -10%;
@@ -245,5 +244,4 @@ a:active{
     width: 40%;
     height: auto;
     z-index: 0;
-    
 }
