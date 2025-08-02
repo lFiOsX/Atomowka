@@ -32,6 +32,7 @@ colors:
     font-style: normal;
     
 }
+
 a{
     color: black;
     text-decoration: none;
@@ -57,53 +58,47 @@ a:active{
     background-color: #83d4f2 ;
     display: flex;
     align-items: center;
-    height: 20%;
-    padding-bottom: 2%;
+    width: 100%;
+    height:100%;
+
+    position: relative;
 }
 
-.logo{
-    z-index: 1;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width: 40%;
-    
-
+#business-card img{
+    width: 100%;
+    height: auto;
 }
 
-.logo img{
-    width: 60%;
-    height: 60%;
-}
 
 #banners{
-    top: 20px;
-    right: 50px;
-    width:60%;
-    z-index: 1;
-}
-/* szablon banerów informacyjnych */
-.banner{
-    background-color: #c01b82;
-    color: white;
-    border:  0.3em solid white;
-    border-radius: 50px;
-    text-align: center;
-    /* font-size: 1.8em; */
-    font-size: clamp(0.5rem, 1.8vw, 2.1rem);
-
-    margin: 5px auto;
-    padding: 1% 3%;
-    
+    position: absolute;
+    top:0em;
+    right: 20em;
+    width: 20em;
+    height: 15em;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width:fit-content;
-    /* width: 70%; */
+    flex-direction: column;
+}
+/* szablon banerów informacyjnych */
+.banner{
     transition: 0.5s;
 
-    filter: blur(0.4px);
+    background-color: #c01b82;
+    color: white;
+    text-align: center;
+    font-size: clamp(0.5rem, 1.3vw, 2rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border:  0.23em solid white;
+    border-radius: 50px;
+    width: 90%;
+    padding: 0.4em;
+    margin:0.2em auto;
 }
 
 /* odstęp logo od napisu w banerze */
@@ -116,10 +111,8 @@ a:active{
     /* dodac jeszcze ze po najechaniu pokazuje sie cos obok przycisku jakis obrazek staje sie nieprzezroczysty */
     
     
-    font-size: clamp(1.1rem, 2vw, 2.3rem);
-    padding: 1.2% 3.2%;
-    border-radius: 50px;
-    transition: 0.4s;
+    font-size: clamp(1.1rem, 1.6vw, 2.3rem);
+    transition: 0.3s;
 }
 
 #facebook-banner{
@@ -129,7 +122,7 @@ a:active{
 
 #phone-banner{
     transform: rotateZ(0.02turn);
-
+    margin-left: 3em;
 }
 
 
