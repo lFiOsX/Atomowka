@@ -50,6 +50,14 @@ a:active{
     position: relative;
 }
 
+#logo-a{
+    position: absolute;
+    width: 12vw;
+    height: 30vh;
+    top:5vh;
+    left: 6vw;
+}
+
 #business-card{
     background-color: #83d4f2 ;
     display: flex;
@@ -139,7 +147,7 @@ a:active{
     font-weight: 800;
     letter-spacing: 0px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 1);
-    z-index: 1;
+    /* z-index: 1; */
 }
 #middle p{
     text-align: center;
@@ -147,7 +155,10 @@ a:active{
     font-weight: 400;
     letter-spacing: -1px;
     padding: 2px;
+    max-width: 60%;
+    margin: 0 auto;
 }
+
 #see-my-services{
     display: flex;
     justify-content: center;
@@ -158,12 +169,15 @@ a:active{
     font-weight: 900;
     font-size: clamp(1rem, 2vw, 3rem);
     padding: 1% 3%;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: #c01b82;
     border-radius: 50px;
     width: fit-content;
     color: white;
     box-shadow: 0px 25px 30px -11px rgba(66, 68, 90, 1);
+}
+#see-my-services h1:hover{
+    
 }
 
 #services{
@@ -171,7 +185,7 @@ a:active{
     justify-content: center;
     flex-direction: row;
     
-    padding: 10% 0;
+    padding: 5% 0;
 }
 .service a{
     display: flex;
@@ -207,34 +221,26 @@ a:active{
 
 }
 
+#balloon-cloud,
+#ball-cloud{
+    position: absolute;
+    top:30%;
+    width: 15%;
+    height: 13%;
+}
+#balloon-cloud{
+    right: 0;
+
+}
+#ball-cloud{
+ left: 0;
+}
+
+#balloon-cloud img, 
+#ball-cloud img{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
 
 
-.chmura-rog img{
-    width: 20em;
-    height: 10em;
-}
-
-#cloud-upper-left{
-    position: absolute;
-    transform: rotate(0.5turn);
-    left: 0%;
-    top: 0%;
-    width: 30%;
-    height: auto;
-}
-#cloud-bottom-right{
-    position: absolute;
-    transform: rotateX(0.5turn);
-    right: 0%;
-    top: 0%;
-    width: 30%;
-    height: auto;
-}
-#cloud-bottom-left{
-    position: absolute;
-    left: -10%;
-    top: 9%;
-    width: 40%;
-    height: auto;
-    z-index: 0;
-}
