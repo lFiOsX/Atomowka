@@ -23,13 +23,9 @@ colors:
     box-sizing: border-box;
     
 
-    /* font-family: "Caveat Brush", cursive;
-    font-weight: 500;
-    font-style: normal; */
-    
-    font-family: "Comic Relief", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "McLaren", sans-serif;
+  font-weight: 600;
+  font-style: normal;
     
 }
 
@@ -140,8 +136,8 @@ a:active{
     text-align: center;
     padding: 20px;
     font-size: clamp(1rem, 5.5vw, 3rem);
-    font-weight: 500;
-    letter-spacing: -3px;
+    font-weight: 800;
+    letter-spacing: 0px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 1);
     z-index: 1;
 }
@@ -149,6 +145,7 @@ a:active{
     text-align: center;
     font-size: clamp(1rem,2vw,2rem);
     font-weight: 400;
+    letter-spacing: -1px;
     padding: 2px;
 }
 #see-my-services{
@@ -156,9 +153,9 @@ a:active{
     justify-content: center;
 }
 #see-my-services h1{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 900;
     font-size: clamp(1rem, 2vw, 3rem);
     padding: 1% 3%;
     margin-top: 10%;
