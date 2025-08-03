@@ -73,13 +73,14 @@ a:active{
 #banners{
     position: absolute;
     top:0em;
-    right: 20em;
-    width: 20em;
-    height: 15em;
+    right: 20%;
+    width: 25%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 /* szablon banerów informacyjnych */
 .banner{
@@ -96,8 +97,8 @@ a:active{
     
     border:  0.23em solid white;
     border-radius: 50px;
-    width: 90%;
-    padding: 0.4em;
+    /* width: 90%; */
+    /* padding: 0.4em; */
     margin:0.2em auto;
 }
 
@@ -111,16 +112,18 @@ a:active{
     /* dodac jeszcze ze po najechaniu pokazuje sie cos obok przycisku jakis obrazek staje sie nieprzezroczysty */
     
     
-    font-size: clamp(1.1rem, 1.6vw, 2.3rem);
+    font-size: clamp(0.2rem, 1.5vw, 2.5rem);
     transition: 0.3s;
 }
 
 #facebook-banner{
-    margin-right: 40%;
+    padding:2% 3%;
+    margin-right: 50%;
     transform: rotateZ(-0.01turn);
 }
 
 #phone-banner{
+    padding:3% 4%;
     transform: rotateZ(0.02turn);
     margin-left: 3em;
 }
