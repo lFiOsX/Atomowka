@@ -1,4 +1,15 @@
+
+-ikony przyciski w nav
 -przerobić strone startową na główną ze wzoru monia zrobić to w grid
 -stworzyc strukturę STRON
 -stworzyć template dla STRON
 -przyciski zaprojektować active i hover
+-zaprojektować stopkę
+-zmienic balony w index, bo pixeloza
+
+- poprawki z rozmiarem baneru (mogłby być większy)
+-rozmiar nav, pzyciski
+
+ZROBIONE:
+-zwija sie nav bar
+-anchor nie pasuje do logo
