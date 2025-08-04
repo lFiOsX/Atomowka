@@ -1,4 +1,4 @@
 -przerobić strone startową na główną ze wzoru monia zrobić to w grid
 -stworzyc strukturę STRON
 -stworzyć template dla STRON
--
+-przyciski zaprojektować active i hover

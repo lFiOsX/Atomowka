@@ -1,5 +1,6 @@
 /* 
 colors:
+#187bbe - ciemny niebieski
 #83d4f2  - niebieski
 #a8dff3  - j niebieski
 #ddf4fa  - b j niebieski
@@ -20,6 +21,7 @@ colors:
 /*================ GLOBAL============== */
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     
 
@@ -36,6 +38,41 @@ a{
 a:active{
     color: green;
 }
+ul{
+    list-style: none;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+section{
+    grid-area: section;
+}
+article{
+    grid-area: article;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+.button{
+    color: white;
+    background-color: #187bbe;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.button:hover{
+    transition: 1s;
+    /* background-color: green; */
+    image-rendering: url("../images/balon.png");
+}
 
 
 
@@ -48,6 +85,15 @@ a:active{
     background-color: #ddf4fa;
     min-height: 100vh;
     position: relative;
+
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "footer";
+    grid-template-rows: 1fr 0.3fr 4fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 #logo-a{
@@ -63,7 +109,7 @@ a:active{
     display: flex;
     align-items: center;
     width: 100%;
-    height:100%;
+    height:auto;
 
     position: relative;
 }
@@ -84,6 +130,7 @@ a:active{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: red;
 
 }
 /* szablon banerów informacyjnych */
@@ -99,18 +146,17 @@ a:active{
     align-items: center;
     justify-content: center;
     
-    border:  0.23em solid white;
+    border:  0.20em solid white;
     border-radius: 50px;
-    /* width: 90%; */
-    /* padding: 0.4em; */
     margin:0.2em auto;
+    
 }
-
 /* odstęp logo od napisu w banerze */
-#banners:nth-child(2) p{
-    margin:0px 10px;
+#banners:nth-child(2) p,
+#facebook-banner p{
+    padding:0px 0%;
+    background-color: wheat;
 }
-
 .banner:hover{
     
     /* dodac jeszcze ze po najechaniu pokazuje sie cos obok przycisku jakis obrazek staje sie nieprzezroczysty */
@@ -119,13 +165,11 @@ a:active{
     font-size: clamp(0.2rem, 1.5vw, 2.5rem);
     transition: 0.3s;
 }
-
 #facebook-banner{
     padding:2% 3%;
     margin-right: 50%;
     transform: rotateZ(-0.01turn);
 }
-
 #phone-banner{
     padding:3% 4%;
     transform: rotateZ(0.02turn);
@@ -133,6 +177,30 @@ a:active{
 }
 
 
+
+
+.container-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar{
+    width: 100%;
+}
+.nav-bar li{
+
+    display: inline-block;
+background: linear-gradient(0deg,rgba(4, 107, 148, 1) 0%, rgba(24, 123, 190, 1) 56%, rgba(255, 255, 255, 1) 97%);    
+    padding: 0.2% 1%;
+    border-radius: 1em;
+    font-size: clamp(1rem, 2vw, 3rem);
+    margin: 0 4%;
+}
+.nav-bar li a{
+    color: white;
+}
 
 
 
@@ -221,6 +289,14 @@ a:active{
 
 }
 
+.stopka-ex{
+    background-color: yellow;
+}
+
+
+
+
+
 #balloon-cloud,
 #ball-cloud{
     position: absolute;
@@ -242,5 +318,7 @@ a:active{
     height: auto;
     z-index: 1;
 }
+
+
 
 
