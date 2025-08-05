@@ -1,3 +1,4 @@
+- przybiżanie powoduje że naw rozszerza strone
 
 -ikony przyciski w nav
 -przerobić strone startową na główną ze wzoru monia zrobić to w grid
