@@ -61,6 +61,8 @@ aside{
 footer{
     grid-area: footer;
 }
+
+
 .button{
   background-color: #d81b74;
   color: white;
@@ -73,7 +75,6 @@ footer{
   transition: all 0.2s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 .button::before{
     content: "";
     position: absolute;
@@ -88,14 +89,25 @@ footer{
     transform: scale(1.05);
     overflow: visible;
 }
-.button:hover #candy1{
+.button:hover .sweets-button{
     position: absolute;
-    left: 3em;
+    left: 3.5em;
     bottom: 1.5em;
     opacity: 1;
     overflow: visible;
+    transform: rotate(0turn);
 }
-
+.sweets-button{
+    transform: rotate(-0.5turn);
+    z-index: -2;
+    position: absolute;
+    width: 28%;
+    height: 110%;
+    bottom: 0;
+    left: 3.5em;
+    opacity: 1;
+    transition:transform 0.5s ease, bottom 0.5s ease, opacity 0.5s ease;
+}
 .button:active {
   background-color: #a01555; 
   transform: scale(0.95);
@@ -209,6 +221,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 0.7vw dashed white;
 }
 .nav-bar{
     position: absolute;
@@ -218,33 +231,20 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1%;
     height: 4.5vh;
 }
 .nav-bar li{
     position: relative;
     z-index: 1;
     
-    font-size: clamp(0.6rem, 1.2vw, 2rem);
+    font-size: clamp(0.3rem, 1.2vw, 2rem);
     padding: 0.2% 1%;
-    margin: 0 3%;
+    margin: 0 3em;
+    /* width: 20%;
+    height: auto; */
     
 }
-
-
-
-#candy1{
-    z-index: -2;
-    position: absolute;
-
-
-    width: 28%;
-    height: 110%;
-    bottom: 0;
-    left: 3em;
-    opacity: 1;
-    transition:bottom 0.5s ease, opacity 0.5s ease;
-}
-
 .nav-bar li a svg{
     margin-right: 1vw;
 }
@@ -267,7 +267,7 @@ footer{
     background-color: #ddf4fa;
 }
 #middle h1{
-    margin: 2% 0;
+    margin-top: 5%;
     text-align: center;
     padding: 20px;
     font-size: clamp(1rem, 5.5vw, 3rem);
@@ -289,6 +289,7 @@ footer{
 #see-my-services{
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 #see-my-services h1{
     letter-spacing: 1px;
@@ -312,7 +313,7 @@ footer{
     justify-content: center;
     flex-direction: row;
     
-    padding: 5% 0;
+    padding: 10% 0;
 }
 .service a{
     display: flex;
@@ -326,8 +327,8 @@ footer{
 .service a img{
     max-height: 211px;
     max-width: 261px;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     margin: 0 2em;
 }
 .service a img:hover{
@@ -348,7 +349,9 @@ footer{
 
 }
 
-.stopka-ex{
+.container-footer{
+    width: 100%;
+    height: 100%;
     background-color: yellow;
 }
 

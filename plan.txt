@@ -1,11 +1,13 @@
+-stopka - skończyc całą
+
+-rozdzielczośc na szeroką zrobic inne proporcje, na wąska zrobić inne, a na telefony zrobic inne
+
 - przybiżanie powoduje że naw rozszerza strone
 
--ikony przyciski w nav
 -przerobić strone startową na główną ze wzoru monia zrobić to w grid
 -stworzyc strukturę STRON
 -stworzyć template dla STRON
 -przyciski zaprojektować active i hover
--zaprojektować stopkę
 -zmienic balony w index, bo pixeloza
 
 - poprawki z rozmiarem baneru (mogłby być większy)
