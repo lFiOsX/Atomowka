@@ -48,8 +48,6 @@ header{
 }
 nav{
     grid-area: nav;
-    
-
 }
 section{
     grid-area: section;
@@ -76,22 +74,26 @@ footer{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.button::before{
+    content: "";
+    position: absolute;
+    inset: 0; 
+    z-index: -1; 
+    padding: 0.2% 1%;
+    border-radius: 2em;
+    background-color: #c01b82;
+}
 .button:hover{
     background-color: #e73c8e; 
-    transform: scale(1.05)
+    transform: scale(1.05);
+    overflow: visible;
 }
 .button:hover #candy1{
-    /* display: block;
-    position: absolute;
-    margin-top: 20px;
-    transition: margin-top 2s ease; */
     position: absolute;
     left: 3em;
-    margin-top: 20px;
+    bottom: 1.5em;
     opacity: 1;
-
-    background-color: red;
-
+    overflow: visible;
 }
 
 .button:active {
@@ -198,6 +200,9 @@ footer{
 
 
 .container-nav{
+    position: relative;
+    z-index: 2;
+
     margin: 2% 0;
     width: 100%;
     height: 100%;
@@ -206,41 +211,47 @@ footer{
     justify-content: center;
 }
 .nav-bar{
+    position: absolute;
+    z-index: 2;
+
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #83d4f2;
     height: 4.5vh;
-    box-shadow: 5px 36px 40px 3px rgba(66, 68, 90, 1);
 }
 .nav-bar li{
-    z-index: 10;
-    display: inline-block;
-    font-size: clamp(0.6rem, 1.2vw, 2rem);  
-    padding: 0.2% 1%;
-    border-radius: 2em;
-    margin: 0 3%;
     position: relative;
-
+    z-index: 1;
+    
+    font-size: clamp(0.6rem, 1.2vw, 2rem);
+    padding: 0.2% 1%;
+    margin: 0 3%;
+    
 }
 
+
+
 #candy1{
-    /* display: none;
-    margin-top: 10px; */
-    width: 20%;
-    height: 100%;
+    z-index: -2;
     position: absolute;
+
+
+    width: 28%;
+    height: 110%;
+    bottom: 0;
     left: 3em;
-    margin-top: 0;
-    opacity: 0;
-    transition: margin-top 0.5s ease, opacity 0.5s ease;
+    opacity: 1;
+    transition:bottom 0.5s ease, opacity 0.5s ease;
 }
 
 .nav-bar li a svg{
     margin-right: 1vw;
 }
 .nav-bar li a{
+    background: transparent;
+    z-index: 5;
+
     display: flex;
     align-items:center ;
     justify-content: center;
@@ -366,7 +377,3 @@ footer{
     height: auto;
     z-index: 1;
 }
-
-
-
-
