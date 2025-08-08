@@ -4,6 +4,8 @@
 
 - przybiżanie powoduje że naw rozszerza strone
 
+
+-zrobicna poruszajacy się
 -przerobić strone startową na główną ze wzoru monia zrobić to w grid
 -stworzyc strukturę STRON
 -stworzyć template dla STRON
