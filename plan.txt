@@ -15,6 +15,12 @@
 - poprawki z rozmiarem baneru (mogłby być większy)
 -rozmiar nav, pzyciski
 
+
+-gdy dodaje sie pasek do przewijania to zdj w nagłowku traci rozdzielczość
+
 ZROBIONE:
 -zwija sie nav bar
 -anchor nie pasuje do logo
+
+
+
