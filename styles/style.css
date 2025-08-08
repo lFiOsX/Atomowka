@@ -300,9 +300,6 @@ footer{
     color: white;
     box-shadow: 0px 25px 30px -11px rgba(66, 68, 90, 1);
 }
-#see-my-services h1:hover{
-    
-}
 
 #services{
     display: flex;
@@ -353,15 +350,14 @@ footer{
     background-image: url(../images/tlo-footer.png);
     background-position: center;
     background-size: cover;
-    
-    
+    border-top: 0.8vw solid #646768;
 }
 #content-footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 #content-footer svg{
-    width: 1.5rem;
+    width: 2.5em;
     height: auto;
     margin-right: 0.3em;
 }
@@ -370,32 +366,31 @@ footer{
 #content-footer p a{
     font-size: clamp(0.5rem, 0.8vw , 1rem);
     height: 100%;
-    color: rgb(66, 65, 65);
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0.7;
 }
 
 #content-footer a:hover{
     text-decoration: underline;
-    background-color: rgba(190, 190, 190, 0.212);
     border-radius: 20px;
+    opacity: 1;
 }
 #content-footer a:hover svg{
-    transform: scale(1.2);
-    transition: all 0.5s ease;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+#contact-footer, 
+#media-footer,
+#description{
+    padding: 10%;
 }
 
  /* CONTACT FOOTER */
-#contact-footer{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    padding: 10%;
-}
 #contact-footer span a{
     padding: 0.8em;
 }
-
 #contact-footer span, 
 #contact-footer span a{
     display: flex;
@@ -403,23 +398,59 @@ footer{
     justify-content: start;
 }
 
+/* media-footer*/
+#media-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#media-footer span{
+    font-size: clamp(0.6rem, 1vw , 1rem);
+    color: rgb(66, 65, 65);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#media-footer a{
+    width: 30%;
+    height: auto;
+}
+#media-footer svg{
+    width: 100%;
+    height: auto;
+    padding-top: 2em;
+}
+#media-footer a:hover svg{
+    opacity: 1;
+    fill: #d81b74;
+    height: auto;
+    transition: all 0.2s ease;
+}
 
+/* decription-footer */
+#description-footer span{
+    margin-top: 10%;
+    display: block;
+    font-size: clamp(0.6rem, 1vw , 1rem);
+   
+}
 
 /* NAV-footer */
 #nav-footer {
-   display: flex;
-   align-items: start;
-   flex-direction: column;
-    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-footer li a{
+    font-size: clamp(0.9rem, 2vw , 1rem);
+
 }
 #nav-footer li{
-    list-style: disc;
-    color: blue;
+    padding: 2%;
 }
 
-
 #copyright{
-    font-size: clamp(0.3rem, 1vw, 9rem);
+    font-size: clamp(0.1rem, 0.7vw, 9rem);
     display: flex;
     justify-content: center;
     align-items: baseline;
