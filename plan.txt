@@ -1,5 +1,4 @@
--stopka - skończyc całą
-
+(w responsywnosci aside znika boczne, i zostaje srodek, menu albo sie zweza albo idze do hamburgera, footer zmienia sie na ikonki same do klikniecia bez opisóws)
 -rozdzielczośc na szeroką zrobic inne proporcje, na wąska zrobić inne, a na telefony zrobic inne
 
 - przybiżanie powoduje że naw rozszerza strone
@@ -21,6 +20,7 @@
 ZROBIONE:
 -zwija sie nav bar
 -anchor nie pasuje do logo
+-stopka - skończyc całą
 
 
 
