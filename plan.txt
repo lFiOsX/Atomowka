@@ -1,3 +1,8 @@
+-zrobic active i nav bar przerobic
+
+-zmienic wyglad na nowy wireframe
+
+
 (w responsywnosci aside znika boczne, i zostaje srodek, menu albo sie zweza albo idze do hamburgera, footer zmienia sie na ikonki same do klikniecia bez opisóws)
 -rozdzielczośc na szeroką zrobic inne proporcje, na wąska zrobić inne, a na telefony zrobic inne
 

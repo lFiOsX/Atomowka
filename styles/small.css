@@ -1,0 +1,67 @@
+#content{
+    grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "footer";
+    grid-template-rows: auto 0.2fr 2.5fr 0.5fr;
+    grid-template-columns: 1fr;
+}
+
+/* NAV */
+/* .nav-bar{
+    display: none;
+} */
+
+#banners{
+    right: 10%;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.banner{
+    font-size: clamp(0.6rem, 1.8vw, 2rem);
+
+    
+    border:  0.20em solid white;
+    border-radius: 50px;
+    /* margin:; */
+    
+}
+.banner:hover{
+    font-size: clamp(0.2rem, 2.2vw, 2.5rem);
+    transition: 0.2s;
+}
+#facebook-banner{
+    padding:2% 3%;
+    margin-right: 5%;
+    transform: rotateZ(-0.01turn);
+}
+#phone-banner{
+    
+    padding:2% 3%;
+    transform: rotateZ(0.02turn);
+    margin-left: 1em;
+}
+
+/* FOOTER */
+
+#content-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#media-footer span{
+    font-size: clamp(0.8rem, 1vw , 1rem);
+}
+#nav-footer,
+#badges-awards, 
+#description-footer{
+    display: none;
+    
+}
+#contact-footer span a{
+    font-size: clamp(0.7rem, 2.5vw, 2rem);
+}

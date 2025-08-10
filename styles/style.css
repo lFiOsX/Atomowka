@@ -61,19 +61,26 @@ aside{
 footer{
     grid-area: footer;
 }
-
+.active{
+    background-color: red;
+    color: red;
+}
 
 .button{
   background-color: #d81b74;
   color: white;
   font-family: 'Comic Sans MS', sans-serif;
   font-size: 18px;
-  padding: 12px 24px;
+  padding: 1% 2%;
   border: none;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.button:first-child,
+.button:last-child{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 .button::before{
     content: "";
@@ -81,13 +88,13 @@ footer{
     inset: 0; 
     z-index: -1; 
     padding: 0.2% 1%;
-    border-radius: 2em;
     background-color: #c01b82;
 }
 .button:hover{
-    background-color: #e73c8e; 
-    transform: scale(1.05);
     overflow: visible;
+}
+.button:hover::before{
+    background-color:#c01b8144 ;
 }
 .button:hover .sweets-button{
     position: absolute;
@@ -173,7 +180,7 @@ footer{
     background-color: #c01b82;
     color: white;
     text-align: center;
-    font-size: clamp(0.5rem, 1.3vw, 2rem);
+    font-size: clamp(0.5rem, 1.8vw, 2rem);
 
     display: flex;
     align-items: center;
@@ -190,7 +197,7 @@ footer{
     margin-left: 1vw;
 }
 .banner:hover{
-    font-size: clamp(0.2rem, 1.5vw, 2.5rem);
+    font-size: clamp(0.2rem, 1.9vw, 2.5rem);
     transition: 0.3s;
 }
 #facebook-banner{
@@ -217,7 +224,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 0.5vw dashed white;
+    /* border-bottom: 0.5vw dashed white; */
 }
 .nav-bar{
     position: absolute;
@@ -235,8 +242,8 @@ footer{
     z-index: 1;
     
     font-size: clamp(0.3rem, 1.2vw, 2rem);
-    padding: 0.2% 1%;
-    margin: 0 3em;
+    /* padding: 0.2% 1%; */
+    /* margin: 0 3em; */
     /* width: 20%;
     height: auto; */
     
@@ -252,8 +259,8 @@ footer{
     align-items:center ;
     justify-content: center;
     color: white;
-    width: 9em;
-    height: 2.2em;
+    /* width: 9em;
+    height: 2.2em; */
 }
 
 
@@ -266,7 +273,7 @@ footer{
     margin-top: 5%;
     text-align: center;
     padding: 20px;
-    font-size: clamp(1rem, 5.5vw, 3rem);
+    font-size: clamp(1rem, 4.9vw, 3.5rem);
     font-weight: 800;
     letter-spacing: 0px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 1);
@@ -274,7 +281,7 @@ footer{
 }
 #middle p{
     text-align: center;
-    font-size: clamp(1rem,2vw,2rem);
+    font-size: clamp(0.8rem,1.7vw,2rem);
     font-weight: 400;
     letter-spacing: -1px;
     padding: 2px;
@@ -354,7 +361,7 @@ footer{
 }
 #content-footer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #content-footer svg{
     width: 2.5em;
@@ -405,7 +412,7 @@ footer{
     align-items: center;
 }
 #media-footer span{
-    font-size: clamp(0.6rem, 1vw , 1rem);
+    font-size: clamp(0.7rem, 1vw , 2rem);
     color: rgb(66, 65, 65);
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -450,7 +457,7 @@ footer{
 }
 
 #copyright{
-    font-size: clamp(0.1rem, 0.7vw, 9rem);
+    font-size: clamp(0.6rem, 1vw, 9rem);
     display: flex;
     justify-content: center;
     align-items: baseline;
