@@ -8,10 +8,41 @@
     grid-template-columns: 1fr;
 }
 
-/* NAV */
-/* .nav-bar{
+aside{
     display: none;
-} */
+}
+
+#menu-ikon{
+    cursor: pointer;
+    position: fixed;
+    top: 10%;
+    right: 4%;
+    background-color: rgba(0, 0, 0, 0.158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0.1em solid white;
+}
+
+.nav-bar{
+    display: none;
+    flex-direction: column;
+}
+
+
+nav.vertical-nav ul {
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    margin: 0 10% 5% 10%;
+}
+
+nav.vertical-nav ul li {
+    width: 50%;
+}
+
 
 #banners{
     right: 10%;
