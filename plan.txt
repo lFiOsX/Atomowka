@@ -1,5 +1,5 @@
--zrobic active i nav bar przerobic
 
+-dodac aside
 -zmienic wyglad na nowy wireframe
 
 
