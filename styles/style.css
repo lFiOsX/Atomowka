@@ -77,7 +77,6 @@ footer{
   font-size: 18px;
   padding: 1% 2%;
   border: none;
-  /* border-radius: 30px; */
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -248,7 +247,6 @@ border-radius: 50px 0 0 50px;
     height: 4.5vh;
 }
 .nav-bar li{
-    background-color: red;
     position: relative;
     z-index: 1;
     margin: 0.1vw;

@@ -1,4 +1,5 @@
-stopka prześwituje przez nav
+-stopka prześwituje przez nav
+-ikony nie skaluja się w małym nav barze
 - template i strona cofania zrobic juz
 
 -zmienic wyglad na nowy wireframe
