@@ -1,5 +1,4 @@
 
--dodac aside
 -zmienic wyglad na nowy wireframe
 
 

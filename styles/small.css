@@ -14,34 +14,74 @@ aside{
 
 #menu-ikon{
     cursor: pointer;
-    position: fixed;
-    top: 10%;
-    right: 4%;
     background-color: rgba(0, 0, 0, 0.158);
     display: flex;
+
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
     border: 0.1em solid white;
+    
+    position: fixed;
+    top: 1%;
+    right: 1px;
+    z-index: 10;
 }
 
+
+/* Przełączanie hamburgera na X */
+nav svg:first-child{
+    display: none;
+}
+nav.vertical-nav svg:first-child{
+    display: block;
+    width: 15px;
+}
+nav.vertical-nav svg:last-child{
+    display: none;
+}
+
+/* zmiana kierunku nav baru z poziomego na pionowy */
 .nav-bar{
     display: none;
     flex-direction: column;
 }
-
-
+.nav-bar li{
+    margin: 0;
+}
+/* pozycja nowego nav-baru */
 nav.vertical-nav ul {
-    bottom: 0;
     position: fixed;
-    display: flex;
-    margin: 0 10% 5% 10%;
+    right: -10%;
+    top: 2%;
+    
+    display: block;
+    height: 100vh;
+}
+/* rozmiar i style nav-baru */
+nav.vertical-nav ul li{
+    width: 80%;
+    border: 1px solid black;
+}
+nav.vertical-nav ul li a {
+    font-size: clamp(2rem, 1.9vw, 2rem);
+    padding: 2% 0;
 }
 
-nav.vertical-nav ul li {
-    width: 50%;
+.button:first-child::before,
+.button:first-child{
+border-radius: 20px 20px 0 0 ;
 }
+.button:last-child::before,
+.button:last-child{
+    border-radius:0 0 20px 20px ;
+}
+.sweets-button{
+    display: none;
+}
+    
+
 
 
 #banners{
