@@ -377,10 +377,10 @@ border-radius: 50px 0 0 50px;
 #content-footer p a{
     font-size: clamp(0.5rem, 0.8vw , 1rem);
     height: 100%;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.486);
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    opacity: 0.7;
+   
 }
 
 #content-footer a:hover{
@@ -400,6 +400,7 @@ border-radius: 50px 0 0 50px;
 
 
 /* CONTACT FOOTER */
+
 #contact-footer span a{
     padding: 0.8em;
 }
