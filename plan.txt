@@ -1,5 +1,7 @@
--stopka prześwituje przez nav
 -ikony nie skaluja się w małym nav barze
+-zmienic hamburgera żeby przesówał się od nav i zmienił wtedy styl na przeźroczysty
+-płynne rozwiniecie menu
+
 - template i strona cofania zrobic juz
 
 -zmienic wyglad na nowy wireframe
@@ -18,6 +20,7 @@ MAŁE:
 
 ZROBIONE:
 
+-stopka prześwituje przez nav
 -przykleic nav ale od jakiegos pułapu
 -przyciski zaprojektować active i hover
 -przerobić strone startową na główną ze wzoru monia zrobić to w grid

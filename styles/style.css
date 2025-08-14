@@ -1,19 +1,7 @@
-/* 
-colors:
-#187bbe - ciemny niebieski
-#83d4f2  - niebieski
-#a8dff3  - j niebieski
-#ddf4fa  - b j niebieski
-#c01b82  - różowy
-#d5539b  - j różowy
-*/
+
 
 /* %%%%%%%%%%%%% NOTATNIK $%%%%%%%%%%%%%%%%%%%%
--za ostre wszystko poprawic grafiki w canva gimp
 
--chmura cała ma w ramce pasek
--ozdoby umiejscownienie
--ozdoby responsywnosc
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -67,9 +55,6 @@ footer{
 
 
 
-.button.active::before{
-    background-color: #941463;
-}
 .button{
   background-color: #d81b74;
   color: white;
@@ -79,6 +64,9 @@ footer{
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+.button.active::before{
+    background-color: #941463;
 }
 .button:first-child::before,
 .button:first-child{
@@ -251,13 +239,8 @@ border-radius: 50px 0 0 50px;
     z-index: 1;
     margin: 0.1vw;
     font-size: clamp(0.3rem, 1.2vw, 2rem);
-    
-}
-.nav-bar li a svg{
-    margin-right: 1vw;
 }
 .nav-bar li a{
-    
     background: transparent;
     z-index: 5;
 
@@ -265,6 +248,13 @@ border-radius: 50px 0 0 50px;
     align-items:center ;
     justify-content: center;
     color: white;
+}
+.nav-bar li a svg{
+    margin-right: 1vw;
+    flex-shrink: 0;
+    display: block;
+    width: 2vw;
+    height: auto;
 }
 
 
@@ -420,7 +410,7 @@ border-radius: 50px 0 0 50px;
 }
 #media-footer span{
     font-size: clamp(0.7rem, 1vw , 2rem);
-    color: rgb(66, 65, 65);
+    color: rgba(0, 0, 0, 0.555);
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -432,6 +422,7 @@ border-radius: 50px 0 0 50px;
     width: 100%;
     height: auto;
     padding-top: 2em;
+    fill:rgba(0, 0, 0, 0.568);
 }
 #media-footer a:hover svg{
     opacity: 1;
