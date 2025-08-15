@@ -1,6 +1,4 @@
 -
--zmienic hamburgera żeby przesówał się od nav i zmienił wtedy styl na przeźroczysty
--płynne rozwiniecie menu
 
 - template i strona cofania zrobic juz
 
@@ -14,7 +12,9 @@
 -gdy dodaje sie pasek do przewijania strony  to zdj w nagłowku traci rozdzielczość
 
 MAŁE:
+-płynne rozwiniecie menu
 -zmienic balony w index, bo pixeloza
+-zmienic hamburgera żeby przesówał się od nav i zmienił wtedy styl na przeźroczysty
 
 
 

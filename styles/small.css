@@ -1,4 +1,5 @@
-/* GLOBAL */
+/* #region GLOBAL */
+
 #content{
     grid-template-areas:
     "header"
@@ -13,7 +14,9 @@
 aside{
     display: none;
 }
+/* #endregion GLOBAL */
 
+/* #region HEADER */
 
 #banners{
     right: 10%;
@@ -49,6 +52,8 @@ aside{
     margin-left: 1em;
 }
 
+/* #endregion HEADER */
+
 /* #region NAV */
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */
@@ -60,8 +65,10 @@ aside{
 
 /*              Hamburger               */
 
-#container-nav{
-    height: 20em;
+nav{
+    position: sticky;
+    top: 5px;
+    width: 100%;
 }
 #menu-ikon{
     cursor: pointer;
@@ -95,7 +102,6 @@ aside{
 .nav-bar{
     display: none;
     flex-direction: column;
-    /* height: 100vh; */
 }
 .nav-bar li{
     margin: 0;
@@ -163,11 +169,6 @@ nav.vertical-nav ul li a svg {
 /* -------------------------------------------- */
 /* #endregion NAV */
 
-
-
-
-
-
 /* #region FOOTER */
 
 #content-footer{
@@ -187,3 +188,8 @@ nav.vertical-nav ul li a svg {
     font-size: clamp(0.7rem, 2.5vw, 2rem);
 }
 /* #endregion Footer */
+
+
+
+
+/* INDEX  */
