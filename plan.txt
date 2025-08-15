@@ -1,4 +1,4 @@
--ikony nie skaluja się w małym nav barze
+-
 -zmienic hamburgera żeby przesówał się od nav i zmienił wtedy styl na przeźroczysty
 -płynne rozwiniecie menu
 
@@ -20,6 +20,7 @@ MAŁE:
 
 ZROBIONE:
 
+-ikony nie skaluja się w małym nav barze
 -stopka prześwituje przez nav
 -przykleic nav ale od jakiegos pułapu
 -przyciski zaprojektować active i hover

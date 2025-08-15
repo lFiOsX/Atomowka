@@ -1,0 +1,10 @@
+  {
+     "Start region to roll up code": {
+       "prefix": ["sr"],
+       "body": [
+         "/* #region $1 */",
+         "$2"
+       ],
+       "description": "Roll up code with regonization code."
+     }
+   }

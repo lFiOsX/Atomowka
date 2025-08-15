@@ -1,3 +1,4 @@
+/* GLOBAL */
 #content{
     grid-template-areas:
     "header"
@@ -12,121 +13,6 @@
 aside{
     display: none;
 }
-
-
-/* -------------------------------------------------- */
-/* -------------------------------------------------- */
-/* -------------------------------------------------- */
-/* 
-nav   /  nav.vertical-ikon
-    #menu-ikon
-        svg
-        svg
-    .container-nav
-        ul.nav-bar
-            li.button
-            li.button
-            li.button
-            li.button
-            li.button
-            li.button
-*/
-
-
-/********************OBA NAV****************/
-
-/*              Hamburger               */
-#menu-ikon{
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.158);
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 10px;
-    border: 0.1em solid white;
-    
-    position: fixed;
-    top: 1%;
-    right: 3px;
-    /* żeby przycisk był zawsze widoczny */
-    z-index: 10;
-}
-/* Przełączanie hamburgera na X */
-#menu-ikon svg:first-child{
-    display: none;
-}
-
-/*              Menu               */
-/* zmiana kierunku nav baru z poziomego na pionowy */
-.nav-bar{
-    display: none;
-    flex-direction: column;
-    height: 100vh;
-}
-.nav-bar li{
-    margin: 0;
-}
-.button:first-child::before,
-.button:first-child{
-border-radius: 20px 20px 0 0 ;
-}
-.button:last-child::before,
-.button:last-child{
-    border-radius:0 0 20px 20px ;
-}
-.sweets-button{
-    display: none;
-}
-
-
-
-
-/********************NOWE NAV****************/
-
-/*              Hamburger               */
-nav.vertical-nav #menu-ikon svg:first-child{
-    display: block;
-    width: 1em;
-}
-nav.vertical-nav #menu-ikon svg:last-child{
-    display: none;
-}
-
-/*              Menu                    */
-nav.vertical-nav{
-    position: sticky;
-    top: 50%;
-    width: 100%;
-}
-/* pozycja nowego nav-baru */
-nav.vertical-nav ul{
-    display: block;
-}
-/* rozmiar i style nav-baru */
-nav.vertical-nav ul li{   
-    width: 80%;
-    border: 1px solid black;
-    margin-left: 10%;
-}
-nav.vertical-nav ul li a {
-    font-size: clamp(1.5rem, 1.9vw, 2rem);
-    padding: 1% 0;
-    opacity: 1;
-    transition: opacity 1s ease;
-}
-nav.vertical-nav ul li a svg {
-    width: 1em;
-    height:auto;
-    margin-right:2vw ;
-}
-
-    
-/* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
-/* -------------------------------------------- */
 
 
 #banners{
@@ -163,10 +49,125 @@ nav.vertical-nav ul li a svg {
     margin-left: 1em;
 }
 
+/* #region NAV */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
 
 
 
-/* FOOTER */
+/********************OBA NAV****************/
+
+/*              Hamburger               */
+
+#container-nav{
+    height: 100vh;
+}
+#menu-ikon{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3em;
+    margin-left: 90%;
+    
+    
+    border-radius: 10px;
+    padding: 10px;
+    border: 0.1em solid white;
+    
+    position: sticky;
+    top: 5px;
+    right: 3px;
+
+    /* żeby przycisk był zawsze widoczny */
+    z-index: 10;
+}
+/* zmień ikone hamburgera na X */
+#menu-ikon svg:first-child{
+    display: none;
+}
+
+/*              Menu               */
+/* zmiana kierunku nav baru z poziomego na pionowy */
+.nav-bar{
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+}
+.nav-bar li{
+    margin: 0;
+}
+.button:first-child::before,
+.button:first-child{
+border-radius: 20px 20px 0 0 ;
+}
+.button:last-child::before,
+.button:last-child{
+    border-radius:0 0 20px 20px ;
+}
+.sweets-button{
+    display: none;
+}
+
+
+
+
+/********************NOWE NAV****************/
+
+/*              Hamburger               */
+
+nav.vertical-nav #menu-ikon svg:first-child{
+    display: block;
+    width: 1.1em;
+}
+nav.vertical-nav #menu-ikon svg:last-child{
+    display: none;
+}
+
+/*              Menu                    */
+nav.vertical-nav{
+    position: sticky;
+    top: 5px;
+    width: 100%;
+}
+/* pozycja nowego nav-baru */
+nav.vertical-nav ul{
+    display: block;
+}
+/* rozmiar i style nav-baru */
+nav.vertical-nav ul li{   
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+nav.vertical-nav ul li a {
+    font-size: clamp(1.5rem, 1.9vw, 2rem);
+    padding: 1% 0;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+nav.vertical-nav ul li a svg {
+    width: 1em;
+    height:auto;
+    margin-right:2vw ;
+}
+
+    
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* #endregion NAV */
+
+
+
+
+
+
+/* #region FOOTER */
 
 #content-footer{
     display: grid;
@@ -184,4 +185,4 @@ nav.vertical-nav ul li a svg {
 #contact-footer span a{
     font-size: clamp(0.7rem, 2.5vw, 2rem);
 }
-
+/* #endregion Footer */
