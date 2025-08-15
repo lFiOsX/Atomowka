@@ -4,8 +4,9 @@
     "nav"
     "section"
     "footer";
-    grid-template-rows: auto 0.2fr 2.5fr 0.5fr;
+    grid-template-rows: auto 2vh auto auto;
     grid-template-columns: 1fr;
+    position: relative;
 }
 
 aside{
@@ -17,7 +18,7 @@ aside{
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */
 /* 
-nav.vertical-ikon
+nav   /  nav.vertical-ikon
     #menu-ikon
         svg
         svg
@@ -32,21 +33,14 @@ nav.vertical-ikon
 */
 
 
+/********************OBA NAV****************/
 
-nav{
-    position: relative;
-}
-nav.vertical-nav{
-        position: sticky;
-        top: 0px;
-}
-
-
+/*              Hamburger               */
 #menu-ikon{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.158);
     display: flex;
-
+    
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -60,61 +54,20 @@ nav.vertical-nav{
     z-index: 10;
 }
 /* Przełączanie hamburgera na X */
-nav #menu-ikon svg:first-child{
-    display: none;
-}
-nav.vertical-nav #menu-ikon svg:first-child{
-    display: block;
-    width: 1em;
-}
-nav.vertical-nav #menu-ikon svg:last-child{
+#menu-ikon svg:first-child{
     display: none;
 }
 
-
-
-
-.container-nav{
-    margin-left: 10%;
-}
-/* pozycja nowego nav-baru */
-nav.vertical-nav ul {
-    position: absolute;
-    top: 0;
-    
-    transition: display 1s ease;
-    display: block;
-    height: 100vh;
-    margin: 0 auto;
-}
-/* rozmiar i style nav-baru */
-nav.vertical-nav ul li{
-    width: 80%;
-    border: 1px solid black;
-}
-nav.vertical-nav ul li a {
-    font-size: clamp(1.5rem, 1.9vw, 2rem);
-    padding: 1% 0;
-}
-nav.vertical-nav ul li a svg {
-    width: 1em;
-    height:auto;
-    margin-right:2vw ;
-}
-
-
-
-
+/*              Menu               */
 /* zmiana kierunku nav baru z poziomego na pionowy */
 .nav-bar{
     display: none;
     flex-direction: column;
+    height: 100vh;
 }
 .nav-bar li{
     margin: 0;
 }
-
-
 .button:first-child::before,
 .button:first-child{
 border-radius: 20px 20px 0 0 ;
@@ -126,6 +79,49 @@ border-radius: 20px 20px 0 0 ;
 .sweets-button{
     display: none;
 }
+
+
+
+
+/********************NOWE NAV****************/
+
+/*              Hamburger               */
+nav.vertical-nav #menu-ikon svg:first-child{
+    display: block;
+    width: 1em;
+}
+nav.vertical-nav #menu-ikon svg:last-child{
+    display: none;
+}
+
+/*              Menu                    */
+nav.vertical-nav{
+    position: sticky;
+    top: 50%;
+    width: 100%;
+}
+/* pozycja nowego nav-baru */
+nav.vertical-nav ul{
+    display: block;
+}
+/* rozmiar i style nav-baru */
+nav.vertical-nav ul li{   
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+}
+nav.vertical-nav ul li a {
+    font-size: clamp(1.5rem, 1.9vw, 2rem);
+    padding: 1% 0;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+nav.vertical-nav ul li a svg {
+    width: 1em;
+    height:auto;
+    margin-right:2vw ;
+}
+
     
 /* -------------------------------------------- */
 /* -------------------------------------------- */
