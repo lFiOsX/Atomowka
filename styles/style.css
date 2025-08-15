@@ -429,7 +429,14 @@ border-radius: 50px 0 0 50px;
 
 #container-start{
     width: 100%;
-    background-color: red;
+
+
+}
+
+#container-start img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
 }
 
 
