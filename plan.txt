@@ -1,6 +1,17 @@
--ikony nie skaluja się w małym nav barze
--zmienic hamburgera żeby przesówał się od nav i zmienił wtedy styl na przeźroczysty
--płynne rozwiniecie menu
+-Dostosować wymiary żeby ładnie wygladały:
+    -zmienic baner głowny na mniejszy
+    -ustandaryzowac czcionki
+    -ustandaryzowac paddingi w buttonach
+    -odstepy miedzy sekcjami (48-96px)
+    -odstepy miedzy akapitami (16-24px)
+    -paddingi w okół przycisków (8-16px)
+    -Dobrze jest stosować skale odstępów (np. 4, 8, 16, 24, 32, 48px).
+    -Breakpointy najczęściej:
+        320–480px (telefony),
+        768px (tablety),
+        1024px (laptopy),
+        1200+ px (duże ekrany).
+
 
 - template i strona cofania zrobic juz
 
@@ -14,12 +25,19 @@
 -gdy dodaje sie pasek do przewijania strony  to zdj w nagłowku traci rozdzielczość
 
 MAŁE:
+-płynne rozwiniecie menu
 -zmienic balony w index, bo pixeloza
+-zmienic hamburgera żeby przesówał się od nav i zmienił wtedy styl na przeźroczysty
 
+
+NOWA STRONA:
+
+-układ 12 kolumnowy na 
 
 
 ZROBIONE:
 
+-ikony nie skaluja się w małym nav barze
 -stopka prześwituje przez nav
 -przykleic nav ale od jakiegos pułapu
 -przyciski zaprojektować active i hover
@@ -28,6 +46,16 @@ ZROBIONE:
 -zwija sie nav bar
 -anchor nie pasuje do logo
 -stopka - skończyc całą
+
+FEATURE na nową strone:
+-calendly
+
+stara atomówka:
+-https://web.archive.org/web/20211207143105/https://animator-atomowka.pl/
+-https://web.archive.org/web/20240616053127/https://animator-atomowka.pl/opcje-dodatkowe/
+-https://web.archive.org/web/20240616064018/https://animator-atomowka.pl/urodziny/
+-https://web.archive.org/web/20240227034412/https://animator-atomowka.pl/kontakt/
+-https://web.archive.org/web/20240616064900/https://animator-atomowka.pl/wesele-chrzciny-komunie/
 
 
 

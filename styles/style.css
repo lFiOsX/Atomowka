@@ -7,6 +7,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 /*================ GLOBAL============== */
+:root{
+    --jasny-roz: "#212121";
+    --jasny-roz: "#212121";
+    --font-h1-min:32;
+    --font-h1-max:48;
+    --font-h2-min:24;
+    --font-h2-max:32;
+    --font-h3-min:18;
+    --font-h3-max:24;
+
+    --font-p-max:18;
+    --font-p-min:14;
+
+    --font-button-min:;
+    --font-button-max:;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +32,7 @@
     
 
     font-family: "McLaren", sans-serif;
-    font-weight: 600;
+    font-weight: 100;
     font-style: normal;
     
 }
@@ -32,7 +50,6 @@ ul{
 
 header{
     grid-area: header;
-
 }
 nav{
     grid-area: nav;
@@ -53,14 +70,16 @@ footer{
     grid-area: footer;
 }
 
-
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
 
 .button{
   background-color: #d81b74;
   color: white;
-  font-family: 'Comic Sans MS', sans-serif;
-  font-size: 18px;
-  padding: 1% 2%;
+  padding: 8px 14px;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -74,8 +93,7 @@ border-radius: 50px 0 0 50px;
 }
 .button:last-child::before,
 .button:last-child{
-    border-radius: 0px 50px 50px 0px;
-    
+    border-radius: 0px 50px 50px 0px;    
 }
 .button::before{
     content: "";
@@ -130,12 +148,12 @@ border-radius: 50px 0 0 50px;
 
     display: grid;
     grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "aside-left section aside-right"
-    "footer footer footer";
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "aside-left section section section section aside-right"
+    "footer footer footer footer footer footer";
     grid-template-rows: auto 0.3fr 4fr 1fr;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #logo-a{
@@ -214,7 +232,7 @@ border-radius: 50px 0 0 50px;
     z-index: 2;
 
     margin: 2% 0;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -238,7 +256,8 @@ border-radius: 50px 0 0 50px;
     position: relative;
     z-index: 1;
     margin: 0.1vw;
-    font-size: clamp(0.3rem, 1.2vw, 2rem);
+    font-size: clamp(--font-h2-min, 1em, --font-h2-max);
+    
 }
 .nav-bar li a{
     background: transparent;
@@ -253,7 +272,7 @@ border-radius: 50px 0 0 50px;
     margin-right: 1vw;
     flex-shrink: 0;
     display: block;
-    width: 2vw;
+    width: clamp(24px,1em,32px);
     height: auto;
 }
 
@@ -267,7 +286,7 @@ border-radius: 50px 0 0 50px;
     margin-top: 5%;
     text-align: center;
     padding: 20px;
-    font-size: clamp(1rem, 4.9vw, 3.5rem);
+    font-size: clamp(32px, 1em, 48px);
     font-weight: 800;
     letter-spacing: 0px;
     text-shadow: 0 0 1px rgba(0, 0, 0, 1);
@@ -275,7 +294,7 @@ border-radius: 50px 0 0 50px;
 }
 #middle p{
     text-align: center;
-    font-size: clamp(0.8rem,1.7vw,2rem);
+    font-size: clamp(--font-p-min,1em,--font-p-max);
     font-weight: 400;
     letter-spacing: -1px;
     padding: 2px;
@@ -465,23 +484,28 @@ border-radius: 50px 0 0 50px;
 
 
 /* ASIDE */
-#container-aside-right,
+/* #container-aside-right,
 #container-aside-left{
-    width: 100%;
-    min-height: 40%;
     display: flex;
     align-items: end;
+
+    position: fixed;
+    top: 50vh;
 }
 #container-aside-left{
-    justify-content: start;
+    left: 0;
 }
 #container-aside-right{
-    justify-content: end;
+    right: 0;
 
 }
 #container-aside-right img, 
 #container-aside-left img{
-    width: 80%;
+    width: 15vw;
     height: auto;
     z-index: 1;
+    display: flex;
 }
+#container-aside-right img{
+    justify-content: end;
+}  */
